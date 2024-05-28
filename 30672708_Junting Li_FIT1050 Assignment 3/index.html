@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Coffee Bean Store</title>
+    <link rel="icon" href="images/favicon_io/favicon.ico">
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- My Website CSS -->
+    <link href="layout/styles/all.css" type="text/css" rel="stylesheet">
+    <!-- From CodeStitch -->
+    <link href="layout/styles/header&nav.css" type="text/css" rel="stylesheet">
+    <link href="layout/styles/footer.css" type="text/css" rel="stylesheet">
+    <link href="layout/styles/activity.css" type="text/css" rel="stylesheet">
+    <link href="layout/styles/faq.css" type="text/css" rel="stylesheet">
+    <link href="layout/styles/whychoose.css" type="text/css" rel="stylesheet">
+    <!-- From Week 9 Lab -->
+    <link href="layout/styles/product.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+    <!-- ============================ -->
+    <!--      Header & Navigation     -->
+    <!-- ============================ -->
+    <header id="cs-navigation">
+        <div class="cs-top-bar">
+            <div class="cs-top-container">
+                <div class="cs-top-contact">
+                    <!-- Contract Information -->
+                    <a href="" class="cs-top-link">
+                        <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-grey.svg" alt="phone icon" width="16" height="16" aria-hidden="true" decoding="async">
+                        Call us: +61 412 345 678
+                    </a>
+                    <a href="" class="cs-top-link">
+                        <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-grey.svg" alt="clock icon" width="20" height="20" aria-hidden="true" decoding="async">
+                        Opening hours: Mon - Sat: 10:30am To 5:30pm
+                    </a>
+                </div>
+                <div class="cs-top-social">
+                    <!-- Social Media Share Link -->
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg" alt="facebook icon" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg" alt="twitter icon" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg" alt="instagram icon" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cs-container">
+            <!-- Logo -->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="images/logo/1080logo.png" alt="logo" width="200" height="50">
+                <img src="images/logo/1080logo-name.png" alt="logo name" width="200" height="50">
+            </a>
+            <nav class="cs-nav" role="navigation">
+                <!-- Moblie Toggle Button -->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <div class="cs-ul-wrapper">
+                    <!-- Navigation Button -->
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                SHOP
+                            </a>
+                        </li>
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                ABOUT US
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">OUR COFFEE</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">OUR STORY</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                CONTACT
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                <img src="images/header/shopping-cart.png" class="cs-drop-icon" alt="shopping cart icon" width="15px" height="15px"/>
+                                SHOPPING CART
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===================== -->
+        <!--        Activity       -->
+        <!-- ===================== -->
+        <div id="title-container"> 
+            <h2>New Activity</h2>
+        </div>
+        <section id="sbsr-1599">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">2024 May 29th</span>
+                    <h2 class="cs-title">Handcrafted Coffee Experience </h2>
+                    <p class="cs-text">
+                        Discover the taste of love and dedication in every cup with our family-owned, 
+                        ethically sourced, small-batch coffee. Nestled along the picturesque coastline 
+                        of Mystery Bay near Tilba, NSW, our high-quality roasts offer a unique and 
+                        delightful coffee experience.
+                    </p>
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people.jpg" alt="people" width="608" height="406">
+                    </picture>
+                </div>
+                <div class="cs-stats-group">
+                    <picture class="cs-picture cs-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model2.jpg" alt="people" width="608" height="662">
+                    </picture>
+                    <ul class="cs-stats">
+                        <li class="cs-stat">
+                            <span class="cs-number">99%</span>
+                            <span class="cs-desc">Positive feedback</span>
+                        </li>
+                        <li class="cs-stat">
+                            <span class="cs-number">10</span>
+                            <span class="cs-desc">Days free return policy</span>
+                        </li>
+                        <li class="cs-stat">
+                            <span class="cs-number">24/7</span>
+                            <span class="cs-desc">Online customer support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== -->
+        <!--     Why Choose      -->
+        <!-- =================== -->
+        <div id="title-container"> 
+            <h2>Why Choose Us?</h2>
+        </div>
+        <section>
+            <div id="why-choose-289">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <div class="cs-flex">
+                            <span class="cs-topper">HANDCRAFTED COFFEE WITH LOVE 
+                                & DEDICATION FAMILY OWNED
+                            </span>
+                            <h2 class="cs-title">Ethically sourced, top-quality, 
+                                family-owned small batch coffee roastery on the 
+                                picturesque coastline of Mystery Bay, near Tilba,
+                                 NSW, Australia.
+                            </h2>
+                        </div>
+                        <p class="cs-text">
+                            Our coffee is grown free of any synthetic fertilisers, chemicals 
+                            or pesticides in any stage of its production. This means cleaner 
+                            beans, air, land and water. A family owned & operated small batch 
+                            coffee roasting business located in the unspoilt picturesque 
+                            coastline of Mystery Bay near the rolling hills of Tilba NSW, Australia.
+                        </p>
+                    </div>
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/award.svg" alt="icon" width="48" height="48">
+                            <h3 class="cs-h3">LEARN MORE ABOUT OUR COFFEE</h3>
+                            <p class="cs-item-text">
+                                Attention to detail and quality is imperative.
+                                Precision and consistency is key to a perfect roast, every time!
+                            </p>
+                        </li>
+                        <li class="cs-item">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild-black.svg" alt="icon" width="40" height="48">
+                            <h3 class="cs-h3">BUY OUR SPECIALTY COFFEE ONLINE HERE</h3>
+                            <p class="cs-item-text">
+                                Our coffee is grown free of any synthetic fertilisers, chemicals 
+                                or pesticides in any stage of its production, 100% Organic.
+                            </p>
+                        </li>
+                        <li class="cs-item">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/call.svg" alt="icon" width="48" height="48">
+                            <h3 class="cs-h3">GET IN TOUCH WE'RE HAPPY TO HELP</h3>
+                            <p class="cs-item-text">
+                                Would you like to stock our specialty selection, or just 
+                                need more info? Get in touch.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+                  
+        <!-- ====================== -->
+        <!--        Product         -->
+        <!-- ====================== -->
+        <section>
+            <div id="filters-container">
+                <h2>Our Products</h2>
+                <p id="filters">
+                    <span class="filter-title">Look For:</span>
+                    <button class="cs-button-solid cs-submit" data-filter="img">All</button>
+                    <button class="cs-button-solid cs-submit" data-filter=".best">Best Sellers</button>
+                    <button class="cs-button-solid cs-submit" data-filter=".new">New Arrivals</button>
+                    <button class="cs-button-solid cs-submit" data-filter=".limited">Limited Edition</button>
+                    <button class="cs-button-solid cs-submit" data-filter=".decaf">Decaf Coffee</button>
+                </p>
+            </div>
+
+            <div id="products">
+                <a href="images/large/coffee_bean.png" data-fancybox="gallery" data-caption="Best Sellers Coffee Bean">
+                    <img src="images/small/coffee_bean.png" alt="" class="best" />
+                </a>
+                <a href="images/large/coffee_bean.png" data-fancybox="gallery" data-caption="New Arrivals Coffee Bean">
+                    <img src="images/small/coffee_bean.png" alt="" class="new" />
+                </a>
+                <a href="images/large/coffee_bean.png" data-fancybox="gallery" data-caption="Limited Edition Coffee Bean">
+                    <img src="images/small/coffee_bean.png" alt="" class="limited" />
+                </a>
+                <a href="images/large/coffee_bean.png" data-fancybox="gallery" data-caption="Decaf Coffee Bean">
+                    <img src="images/small/coffee_bean.png" alt="" class="decaf" />
+                </a>
+            </div>
+        </section>
+
+        <!-- ================== -->
+        <!--         FAQ        -->
+        <!-- ================== -->
+        <section>
+            <div id="faq-254">
+                <div class="cs-container">
+                    <div class="cs-content">
+                        <h2>FAQ</h2>
+                    </div>
+                    <div class="cs-flex-group">
+                        <ul class="cs-faq-group">
+                            <!-- Active class added as default -->
+                            <li class="cs-faq-item active">
+                                <button class="cs-button">Do you offer wholesale pricing?</button>
+                                <p class="cs-item-p">
+                                    We can offer wholesale pricing on all of our offerings to business, 
+                                    cafes etc…. Feel free to contact us to discuss this further, or to 
+                                    set up a wholesale account.
+                                </p>
+                            </li>
+                            <li class="cs-faq-item">
+                                <button class="cs-button">What payment methods do you accept?</button>
+                                <p class="cs-item-p">
+                                    We accept payment via Paypal which also securely accepts all major 
+                                    credit cards and you do not need a PayPal account to process payment.
+                                    <br>
+                                    If there is another method of payment you require, please contact 
+                                    us so we can make further arrangements.
+                                </p>
+                            </li>
+                            <li class="cs-faq-item">
+                                <button class="cs-button">What shipping methods do you use?</button>
+                                <p class="cs-item-p">
+                                    We use Australia Post Express Post for delivery of our coffee within 
+                                    Australia. This service offers online tracking and will be delivered 
+                                    in an excellent time frame. Once an order is placed and is dispatched 
+                                    for delivery, you will be contacted and provided with all the required 
+                                    tracking information so you can keep a close eye on your order.
+                                </p>
+                            </li>
+                            <li class="cs-faq-item">
+                                <button class="cs-button">Do you ship internationally?</button>
+                                <p class="cs-item-p">
+                                    Yes we do. For all international orders, please contact us to place your 
+                                    order and for shipping options.
+                                </p>
+                            </li>
+                            <li class="cs-faq-item">
+                                <button class="cs-button">How long does delivery take?</button>
+                                <p class="cs-item-p">
+                                    We post all orders via Australia Post Express Post and will be sent 
+                                    out the following day after Roasting.
+                                    <br>
+                                    Delivery within Australia is usually within 2-4 business days.
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="cs-cta">
+                            <h3 class="cs-h3">Don't see the answer you need?</h3>
+                            <p class="cs-cta-p">
+                                If you can't find the info you need, 
+                                just call or email us our friendly staff are always happy to help. 
+                            </p>
+                            <a href="" class="cs-button-solid">Contact us</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>                     
+
+        <!-- From CodeStitch -->
+        <script src="layout/script/header&nav.js"></script>
+        <script src="layout/script/faq.js"></script>
+        <!-- From Week 9 Lab -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/ fancybox.umd.js"></script>
+        <script src="layout/script/product_filters.js"></script>
+    </main>
+    
+    <!-- ====================== -->
+    <!--         Footer         -->
+    <!-- ====================== -->
+    <footer id="cs-footer-1185">
+        <img class="cs-graphic" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/footer-v.svg" alt="logo" width="1920" height="163">
+        <!-- Subscribe Form -->
+        <div id="cta-1185">
+            <div class="cs-content">
+                <h2 class="cs-title">Subscribe For Newsletter</h2>
+                <form class="cs-form" name="Contact Form" method="post">
+                    <input class="cs-input" type="email" id="cs-email-1185" name="find-us" placeholder="Email Address">
+                    <button class="cs-button-solid cs-submit" type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="cs-container">                        
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a href="" class="cs-logo" aria-label="back to home">
+                    <img src="images/logo/1080logo.png" alt="logo" width="50" height="50">
+                    <img src="images/logo/1080logo-name.png" alt="logo name" width="100" height="50">
+                </a>
+                <p class="cs-text">
+                    We thrive on creating enjoyable & sustainable partnerships with good people who just happen to love great coffee.
+                </p>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Quick Links</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">HOME</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">SHOP</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">FAQ</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">ABOUT US</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">OUR COFFEE</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">OUR STORY</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-nav-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+                    <a class="cs-nav-link cs-phone" href="tel:123-456-7890">+61 412 345 678
+                    </a>
+                </li>
+                <li class="cs-nav-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+                    <a class="cs-nav-link cs-email" href="mailto:info@stitchcarmechanics.com">hello@1080grind.com.au</a>
+                </li>
+                <li class="cs-nav-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+                    <a class="cs-nav-link cs-address" href="" target="_blank" rel="noopener">
+                        5 Lloyd Place,<br> Mystery Bay 2546<br>NSW Australia
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-copyright">© Copyright 2018 - <a class="cs-copyright-link" href="">1080 GRIND | SITE BY OKMEDIA</a></span>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <img src="images//footer/wood-wall.jpg" alt="wooden wall" width="1280" height="568">
+        </picture>
+    </footer>
+</body>
+
+</html>
